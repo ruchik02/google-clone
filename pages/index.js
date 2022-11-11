@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { Header } from "../components/Header";
-
+import Body from "../components/Body";
 const Index = () => {
   return (
     <div>
@@ -16,8 +16,8 @@ const Index = () => {
       </Head>
       {/* header */}
       <Header />
-
       {/* body */}
+      <Body />
       {/* Footer */}
     </div>
   );

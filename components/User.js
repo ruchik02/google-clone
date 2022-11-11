@@ -25,7 +25,7 @@ export const User = ({ providers }) => {
         Sign In
       </button>
     </>
-  )
+  );
 };
 export async function getServerSideProps() {
   const providers = await getProviders();
