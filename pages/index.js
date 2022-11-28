@@ -3,9 +3,7 @@ import Head from "next/head";
 import { Header } from "../components/Header";
 import Body from "../components/Body";
 import Footer from "../components/Footer";
-import { useRouter } from "next/router";
 const Index = () => {
-  const router =useRouter();
   return (
     <div>
       <Head>
