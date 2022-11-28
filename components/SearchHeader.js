@@ -26,6 +26,7 @@ const SearchHeader = () => {
           src="/google.png"
           width={120}
           height={40}
+          alt="google image"
         />
         <form
           action=""

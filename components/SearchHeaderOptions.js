@@ -1,15 +1,23 @@
 import React from "react";
 import SearchHeaderOption from "./SearchHeaderOption";
-import {BsSearch} from 'react-icons/bs'
-import {HiPhoto} from 'react-icons/hi'
+import { Search } from "heroicons-react";
+import { Photograph } from "heroicons-react";
+import { useRouter } from "next/router";
 
-const SearchHeaderOptions = () => {
+export default function SearchHeaderOptions() {
+  const router = useRouter();
   return (
-    <div>
-      <SearchHeaderOption title="All" Icon={BsSearch}/>
-      <SearchHeaderOption title="Images" Icon={HiPhoto} />
+    <div className="flex space-x-7 select-none w-full justify-center text-sm text-gray-700 lg:pl-52 lg:justify-start border-b">
+      <SearchHeaderOption
+        title="All"
+        Icon={Search}
+        selected={router.query.searchType === "" || !router.query.searchType}
+      />
+      <SearchHeaderOption
+        title="Images"
+        Icon={Photograph}
+        selected={router.query.searchType === "image"}
+      />
     </div>
   );
-};
-
-export default SearchHeaderOptions;
+}

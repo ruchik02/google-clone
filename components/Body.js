@@ -20,6 +20,7 @@ const Body = () => {
           width={300}
           height={300}
           className="object-cover"
+          alt="google image"
         />
         <div className="flex w-full mt-5 mx-auto max-w-[90%] border border-gary-200 hover:shadow-lg focus-within:shadow-lg px-5 py-3 rounded-full items-center sm:max-w-xl lg:max-w-2x">
           <AiOutlineSearch className="h-5 text-gray-500 mr-3" />
